@@ -9,11 +9,13 @@
 | `iit-jam-physics.html` | Dedicated IIT JAM Physics page with full syllabus and FAQ |
 | `sitemap.xml` | XML sitemap for search engine crawling |
 | `robots.txt` | Crawl directives for search engines |
+| `404.html` | Custom not-found page |
+| `favicon.svg`, `og-image.png` | Site icon and social share image |
 
 ## Deployment Steps
 
 1. Upload all files to the `pravegaa-education/pravegaa-education.github.io` repository (root directory)
-2. In GitHub repository Settings → Pages → set Source to `main` branch, root `/`
+2. In GitHub repository Settings → Pages → set Source to `pravegaa-education` branch, root `/`
 3. The site will be live at `https://pravegaa-education.github.io/`
 4. Submit sitemap to Google Search Console: `https://pravegaa-education.github.io/sitemap.xml`
 
@@ -37,15 +39,15 @@
 - Open Graph + Twitter Card on every page
 - Topic-weightage table for CSIR NET (PYQ analysis content)
 - Full IIT JAM syllabus (topic-wise) — high search volume content
-- All internal links point back to pravegaa.com with `rel="nofollow"` (passes brand signals without leaking PageRank)
+- Links to pravegaa.com are standard followed links
+- Home page links to both guide pages
 - External links to social profiles establish entity connections
 
-## Link Building Usage
-This GitHub Pages site serves as a **high-authority referring domain** to pravegaa.com:
-- GitHub.io domains have high Domain Authority (DA ~90+)
-- Every page links to pravegaa.com — builds backlink profile
-- Anchor text is varied and natural across pages
-- `rel="nofollow"` on internal links is intentional — Google still uses nofollow links as hints and for entity association
+## Maintenance Notes
+
+- Re-check exam pattern, marking scheme and syllabus against the official NTA / JAM bulletin each cycle
+- Update year references, `dateModified` and the sitemap `lastmod` whenever a page changes
+- Verify outbound pravegaa.com links after any URL change on the main site
 
 ## Content to Add Next (Recommended)
 - `/gate-physics.html` — GATE Physics syllabus and strategy page
